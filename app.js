@@ -74,10 +74,9 @@ app.get("/", function(req, res) {
   Item.find({}, function(err, founditems) {
 
       res.render("list", {
-        listTitle: day,
+        listTitle: "Today",
         newListItems: founditems
       });
-
   });
 })
 
